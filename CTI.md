@@ -7,8 +7,8 @@ The following examples demonstrate that **no technology stack is immune to compr
 ## Cloud Platforms & Infrastructure
 
 - **AWS (S3, IAM, WAF):**  
-  *Capital One Breach (2019):* Misconfigured IAM and WAF exploited for mass data exfiltration from S3.  
-  *Reference:* [CSO Online - Capital One](https://www.csoonline.com/article/3441226/the-capital-one-breach-what-happened-and-what-we-can-learn-from-it.html)
+  *Capital One Breach (2019):* Misconfigured EC2 and WAF infrastructure in AWS.  
+  *Reference:* [Digital Library](https://dl.acm.org/doi/10.1145/3546068)
 
 - **Azure:**  
   *ChaosDB (2021):* Azure Cosmos DB vulnerability exposed thousands of customer keys.  
@@ -16,43 +16,35 @@ The following examples demonstrate that **no technology stack is immune to compr
 
 - **GCP:**  
   *Google Cloud IAM (2021):* Researchers found ways to abuse Google Cloud IAM privilege escalation paths for lateral movement.  
-  *Reference:* [Unit 42 Blog - GCP IAM](https://unit42.paloaltonetworks.com/gcp-iam-privilege-escalation/)
-
-- **Oracle Cloud:**  
-  *Oracle WebLogic Servers (2020):* Vulnerabilities enabled crypto mining and lateral movement in cloud VMs.  
-  *Reference:* [Oracle Security Alert](https://www.oracle.com/security-alerts/alert-cve-2020-14882.html)
+  *Reference:* [StrongDM - GCP](https://www.strongdm.com/what-is/google-data-breach)
 
 ---
 
 ## Identity, Directory, & SSO
 
 - **Active Directory (AD):**  
-  *NotPetya (2017):* AD abused for privilege escalation and mass lateral movement.  
-  *Reference:* [US-CERT Alert](https://www.cisa.gov/news-events/alerts/2017/06/27/petya-malware)
+  *Cisco Data Breach (2025):* Leakage of Active Directory Credentials.  
+  *Reference:* [Non-Human Identity Management Group](https://nhimg.org/cisco-data-breach-leaks-active-directory-credentials)
 
 - **Azure AD:**  
-  *Nobelium/Microsoft 365 Attacks (2020):* Azure AD used as a launchpad for BEC and privilege abuse.  
-  *Reference:* [Microsoft Security Blog](https://www.microsoft.com/security/blog/2021/04/15/new-nation-state-cyberattacks/)
+  *Marks & Spencer (M&S) Ransomware Attack (2025):* Infiltrated network via social engineering, stole the NTDS.dit file (the core AD database).  
+  *Reference:* [SecOps](https://specopssoft.com/blog/marks-spencer-ransomware-active-directory/)
 
 - **Okta:**  
-  *LAPSUS$ (2022):* Breach via third-party engineer compromised SSO and downstream apps.  
-  *Reference:* [Okta Security Blog](https://www.okta.com/blog/2022/03/updated-okta-statement-on-lapsus-compromise/)
-
-- **Ping Identity:**  
-  *SSO Abuse (Multiple Cases):* Attackers use compromised identity providers to pivot across SaaS tools.  
-  *Reference:* [Duo Blog](https://duo.com/decipher/ping-identity-users-warned-of-sso-hijacking-risk)
+  *Okta (2023) :* Breach via third-party engineer compromised SSO and downstream apps.  
+  *Reference:* [TechTarget News](https://www.techtarget.com/searchsecurity/news/366551082/Okta-4-customers-compromised-in-social-engineering-attacks)
 
 ---
 
 ## Endpoint Security, EDR, & MDM
 
-- **CrowdStrike, SentinelOne, Defender, Carbon Black:**  
-  *SolarWinds Attack (2020):* Attackers evaded multiple EDRs using “living off the land” techniques.  
+- **IVANTI**  
+  *Mobile Guardian Hack (2024):* Attackers evaded multiple EDRs using “living off the land” techniques.  
   *Reference:* [FireEye Analysis](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html)
 
-- **Intune (MDM):**  
-  *Stolen Device Enrollment (2022):* Attackers used compromised MDM to enroll rogue devices.  
-  *Reference:* [Microsoft MDM Abuse](https://www.microsoft.com/security/blog/2022/06/02/new-threat-actors-targeting-mdm/)
+- **Ivanti (MDM):**  
+  *Norwegian government agencies Breach (2023):* Two critical vulnerabilities (CVE‑2023‑35078 and CVE‑2023‑35081) were exploited in Ivanti’s MDM..  
+  *Reference:* [The Register](https://www.theregister.com/2023/08/03/ivanti_cisa_norway_attack?)
 
 ---
 
