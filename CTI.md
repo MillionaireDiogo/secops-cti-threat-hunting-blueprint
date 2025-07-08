@@ -4,8 +4,6 @@ The following examples demonstrate that **no technology stack is immune to compr
 
 ---
 
-## Cloud Platforms & Infrastructure
-
 - **AWS (S3, IAM, WAF):**  
   *Capital One Breach (2019):* Misconfigured EC2 and WAF infrastructure in AWS.  
   *Reference:* [Digital Library](https://dl.acm.org/doi/10.1145/3546068)
@@ -17,10 +15,6 @@ The following examples demonstrate that **no technology stack is immune to compr
 - **GCP:**  
   *Google Cloud IAM (2021):* Researchers found ways to abuse Google Cloud IAM privilege escalation paths for lateral movement.  
   *Reference:* [StrongDM - GCP](https://www.strongdm.com/what-is/google-data-breach)
-
----
-
-## Identity, Directory, & SSO
 
 - **Active Directory (AD):**  
   *Cisco Data Breach (2025):* Leakage of Active Directory Credentials.  
@@ -34,33 +28,14 @@ The following examples demonstrate that **no technology stack is immune to compr
   *Okta (2023) :* Breach via third-party engineer compromised SSO and downstream apps.  
   *Reference:* [TechTarget News](https://www.techtarget.com/searchsecurity/news/366551082/Okta-4-customers-compromised-in-social-engineering-attacks)
 
----
-
-## Endpoint Security, EDR, & MDM
-
-- **IVANTI**  
-  *Mobile Guardian Hack (2024):* Attackers evaded multiple EDRs using “living off the land” techniques.  
-  *Reference:* [FireEye Analysis](https://www.fireeye.com/blog/threat-research/2020/12/evasive-attacker-leverages-solarwinds-supply-chain-compromises-with-sunburst-backdoor.html)
-
 - **Ivanti (MDM):**  
   *Norwegian government agencies Breach (2023):* Two critical vulnerabilities (CVE‑2023‑35078 and CVE‑2023‑35081) were exploited in Ivanti’s MDM..  
   *Reference:* [The Register](https://www.theregister.com/2023/08/03/ivanti_cisa_norway_attack?)
 
----
-
-## Firewalls, WAFs, & Proxies
-
-- **Palo Alto, Cisco ASA, Fortinet:**  
-  *Palo Alto Firewall Zero-Day (2021):* Used for RCE and initial access.  
-  *Reference:* [Unit 42 Blog](https://unit42.paloaltonetworks.com/pan-os-vulnerability/)
-
 - **AWS WAF:**  
   *Capital One (2019):* WAF SSRF enabled further compromise in AWS.  
-  *Reference:* [CSO Online](https://www.csoonline.com/article/3441226/the-capital-one-breach-what-happened-and-what-we-can-learn-from-it.html)
+  *Reference:* [ACM Digital Library](https://dl.acm.org/doi/10.1145/3546068)
 
-- **Cloudflare:**  
-  *Cloudflare Leaks (2017):* Bug exposed sensitive memory, including session tokens.  
-  *Reference:* [Cloudflare Blog](https://blog.cloudflare.com/incident-report-on-memory-leak-caused-by-cloudflare-parser-bug/)
 
 ---
 
