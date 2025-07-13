@@ -84,13 +84,3 @@ Joomla threat hunting is the proactive search for malicious activity and vulnera
 | `com_contenthistory`    | Info leak + RCE                  |
 
 ---
-
-## Joomla Security Breaches Summary
-
-| **Incident**                  | **Issue**                                                        | **Impact**                                                                                  | **Source(s)**                        |
-|-------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------|------------------------------------|
-| 2020 JRD Data Leak            | Unencrypted AWS S3 backup of resources.joomla.org exposed by third party | ~2,700 user records leaked (names, encrypted passwords); password resets recommended       | community.joomla.org, reddit.com    |
-| 2019–2020 KashmirBlack Botnet | Exploited outdated Joomla components via RCE, file uploads, SQLi | Large-scale site compromises, crypto-mining, web shell implants                            | medium.com, reddit.com              |
-| 2015 SQL Injection (CVE series) | SQLi flaws in Joomla 3.2–3.4.4 allowed arbitrary DB access       | Admin account creation, data theft, manipulation; patched in Joomla 3.4.5                  | thehackernews.com, securityweek.com|
-| 2014–2015 Multiple CVEs       | XSS, CSRF, RCE, and privilege escalation via insecure input and file handling | Full site compromise possible: defacement, account hijack, shell upload                   | medium.com, securityweek.com       |
-
