@@ -216,15 +216,3 @@ AWS threat hunting focuses on detecting suspicious activities by analyzing Cloud
 - Command and Control (C2)  
 
 ---
-
-### 🛑 Notable AWS Security Breaches Involving Poor API Monitoring
-
-| **#** | **Incident** | **Summary** | **Key Failures** | **Impact** | **Source** |
-|-------|--------------|-------------|------------------|------------|------------|
-| **1** | **Capital One (2019)** | SSRF exploited EC2 metadata to get STS tokens, leading to S3 data theft. | No alerting on `AssumeRole`, `GetObject`; overly permissive IAM. | 100M+ customer records leaked. | [DOJ Statement](https://www.justice.gov/opa/pr/seattle-tech-worker-arrested-computer-intrusion-and-data-theft-capital-one) |
-| **2** | **Tesla Cryptojacking (2018)** | Public K8s dashboard exposed AWS keys used to launch crypto-mining EC2s. | No alerts on `RunInstances`, no credential scanning. | Resource abuse, potential IP exposure. | [RedLock Report](https://blog.redlock.io/tesla-cloud-hack) |
-| **3** | **DoD S3 Exposure (2017)** | Open S3 bucket leaked classified U.S. military files from third-party. | No S3 policy audit, public access unmonitored. | Military intelligence exposed. | [UpGuard Report](https://www.upguard.com/breaches/cloud-leak-cru) |
-| **4** | **UN Data Leak (2020)** | Misconfigured S3 buckets allowed public access to internal UN files. | No auditing of `PutBucketPolicy`, `ListBucket`. | Sensitive UN data exposed. | [The Register](https://www.theregister.com/2020/08/20/un_data_leak/) |
-| **5** | **Twilio Breach (2022)** | Phishing led to MFA bypass, attacker accessed AWS for lateral movement. | No alerts on `AssumeRole`, session anomalies. | Customer data and internal systems compromised. | [Twilio Incident Report](https://www.twilio.com/blog/august-2022-social-engineering-attack) |
-
----
