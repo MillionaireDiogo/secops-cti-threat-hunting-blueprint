@@ -70,10 +70,4 @@ Threat hunting in WordPress environments focuses on identifying signs of brute f
 | `wp_ajax` / `admin-ajax.php`       | Used for DoS, injection, plugin abuse    |
 | `wp-json` / REST API abuse         | Enumeration or exploitation              |
 
-
-## Notable WordPress Breaches from Plugin or Theme Exploits
-| Breach Case              | Vulnerability Type                          | Affected Component                | Impact                                                    | Source                                                                                                                |
-|--------------------------|---------------------------------------------|-----------------------------------|------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| **Mossack Fonseca**      | Unauthenticated file upload (RevSlider)    | RevSlider plugin ≤3.0.95          | Shell upload → 2.6 TB data leak (Panama Papers)            | [Wordfence](https://www.wordfence.com/blog/2016/04/mossack-fonseca-breach-vulnerable-slider-revolution/)             |
-| **AccessPress Backdoor** | Supply-chain backdoor injection             | 93 themes & plugins               | Mass site infection, malware redirection                   | [BleepingComputer](https://www.bleepingcomputer.com/news/security/over-90-wordpress-themes-plugins-backdoored-in-supply-chain-attack/) |
-| **GiveWP RCE (CVE‑2025‑0912)** | PHP object deserialization (unauth) | GiveWP Donation Plugin <3.20.0    | RCE → server takeover, financial/campaign data exposure    | [Reddit (r/netsec)](https://www.reddit.com/r/netsec/comments/ez6oon/)                                                 |
+---
