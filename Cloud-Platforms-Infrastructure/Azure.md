@@ -92,15 +92,3 @@ This document provides a curated list of suspicious Azure API calls, operations,
 | `MFABypass`, `MFA registration reset`                | Bypassing MFA or resetting strong auth.                 |
 
 ---
-
-## Notable Azure Security Incidents
-
-| **#** | **Incident**                           | **Summary**                                                                                                              | **Key Failures**                                                         | **Impact**                                             | **Source**                                              |
-| ----- | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------ | ------------------------------------------------------- |
-| **1** | **ChaosDB (Aug 2021)**                 | Chain of flaws in Azure Cosmos DB’s notebook feature allowed attackers to access primary keys of thousands of databases. | No DevOps defenses or audit on notebook/container interactions.          | Full read/write/delete access to customer data.        | Wiz & SC Media ([reddit.com][1], [en.wikipedia.org][2]) |
-| **2** | **OMIGOD (Sept 2021)**                 | Remote code execution and root escalation via unpatched OMI agent in Linux VMs.                                          | Lack of monitoring e.g., for unauthorized `RunCommand`.                   | Potential root-level compromise across many tenants.   | Wiz & Reddit                                            |
-| **3** | **ACS “ACSESSED” (Aug 2022)**          | Flaw in Azure Cognitive Search “Allow access from portal” leaked network perimeter.                                      | No network/audit alerts for cross‑tenant access.                         | Data-plane leakage across tenants.                     | SecurityWeek                                            |
-| **4** | **Azure Exec Account Hack (Feb 2024)** | Phishing-led takeover of mid/senior executive Azure accounts, exposing hundreds.                                         | Weak credential & token monitoring, no detection of user-risk anomalies. | Sensitive executive data accessed.                     | BusinessUpturn & Teiss                                  |
-| **5** | **Azure Support DB Leak (Dec 2019)**   | Misconfigured NSG allowed external access to Microsoft support analytics DB.                                             | No internal log/audit on NSG changes or DB exposures.                    | Customer support data of potentially millions exposed. | Reddit                                                  |
-
-
